@@ -3,17 +3,17 @@ export const FriendList = ({friends}) => {
         {friends.map((el) => {
       return <li className="item" key={el.id}>
           {el.isOnline ? <span className="status" style={{
-              display: "block",
+              display: 'block',
               backgroundColor: 'green',
               borderRadius: '50%',
               width: '20px',
-              height: '20px,'
+              height: '20px'
           }}></span> : <span className="status" style={{
-                  display: 'block',
+              display: 'block',
               borderRadius: '50%',
               backgroundColor: 'red',
               width: '20px',
-          height: '20px'}}></span>}
+              height: '20px'}}></span>}
   <img className="avatar" src={el.avatar} alt="User avatar" width="48" />
           <p className="name">{el.name}</p>
 </li>
