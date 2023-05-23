@@ -2,7 +2,7 @@ export const FriendList = ({friends}) => {
     return (<ul className="friend-list">
         {friends.map((el) => {
       return <li className="item" key={el.id}>
-          {friends.isOnline ? <span className="status" style={{
+          {el.isOnline ? <span className="status" style={{
               display: "block",
               backgroundColor: 'green',
               borderRadius: '50%',
