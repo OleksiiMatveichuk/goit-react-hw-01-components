@@ -5,23 +5,24 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
-    />
+      className="avatar-user"
+    /><div>
     <p className="name">{username}</p>
     <p className="tag">{tag}</p>
     <p className="location">{location}</p>
+    </div>
   </div>
 
   <ul className="stats">
-    <li>
+    <li className="stats-item">
       <span className="label">Followers</span>
       <span className="quantity">{stats.followers}</span>
     </li>
-    <li>
+    <li className="stats-item">
       <span className="label">Views</span>
       <span className="quantity">{stats.views}</span>
     </li>
-    <li>
+    <li className="stats-item">
       <span className="label">Likes</span>
       <span className="quantity">{stats.likes}</span>
     </li>
