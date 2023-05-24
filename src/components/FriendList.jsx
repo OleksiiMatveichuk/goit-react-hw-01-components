@@ -1,4 +1,6 @@
-export const FriendList = ({friends}) => {
+import PropTypes from "prop-types";
+
+export const FriendList = ({ friends }) => {
     return (<ul className="friend-list">
         {friends.map((el) => {
       return <li className="item" key={el.id}>
@@ -20,3 +22,7 @@ export const FriendList = ({friends}) => {
   })}
 </ul>)
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
